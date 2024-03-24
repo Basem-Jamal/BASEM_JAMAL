@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+*{
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+p {
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+body {
+    background-image: linear-gradient(to right,#01022d,#000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+        width: 95%;
+        height: 640px;
+    background-image: linear-gradient(to right, #01022de5 30%,#0000007c),
+    url(/Img/بنر.jpg)
+    ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.container:hover{
+    transition: 5s;
+        background-image: linear-gradient(to right, #01022de5 30%, transparent),
+        url(/Img/بنر.jpg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+ul {
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+
+ul a {
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+ul a:hover:after {
+    border-bottom: 2px solid white;    transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+ul a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #019fb6;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+.content {
+    color: white;
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.content h2 {
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.content p {
+    letter-spacing: 3px;
+    width: 350px;
+    padding: 30px 0px;
+}
+
+.content button {
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.content button:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+}
+
+.container2 {
+    position: relative;
+    top: 80px;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+        justify-content: space-around;
+        /* لتوزيع البطاقات بالتساوي */
+        align-items: center;
+        /* لتوسيط البطاقات عمودياً */
+        flex-wrap: nowrap;
+        /* لمنع البطاقات من التحول إلى السطر التالي */}
+
+
+.title1{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    color: white;
+    background-color: #01022d;
+    text-align: center;
+    align-items: center;
+    top: 130px;
+
+}
+
+/*START-CARD-MJED*/
+.card-eng-mjed {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin:10px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    padding: 5PX;
+    
+}
+
+.card-ar-mjed {
+     display: none;
+     width: 100%;
+     height: 250px;
+     max-width: 300px;
+     margin: auto;
+     text-align: center;
+     font-family: arial;
+     margin: 10px;
+     transition: transform 0.8s;
+     transform-style: preserve-3d;
+     
+}
+
+.container2:hover .card-eng-mjed {
+    transform: rotateY(180deg);
+}
+
+
+.card-eng-mjed img {
+    width: 100%;
+    /* لجعل الصورة تأخذ العرض الكامل للبطاقة */
+    height: auto;
+    /* للحفاظ على نسب الصورة */
+    border-radius:30px ;
+    transition: 0.5s;
+    border: 3px solid white;
+}
+
+.card-ar-mjed img {
+    width: 100%;
+    /* لجعل الصورة تأخذ العرض الكامل للبطاقة */
+    height: auto;
+    /* للحفاظ على نسب الصورة */
+    border-radius: 30px;
+    transition: 0.5s;
+    border: 3px solid white;
+}
+.card-eng-.card-ar-mjed {
+    display: none;
+    /* إخفاء المحتوى الإنجليزي عند تمرير المؤشر */
+}
+
+
+.card-eng-mjed img:hover {
+    
+    box-shadow: 0 0px 80px 0 rgb(255, 252, 252);
+}
+/*END-CARD-MJED*/
+
+/*START-CARD-BASEM*/
+.card-eng-basem {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin: 10px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    padding: 5PX;
+}
+
+.card-ar-basem {
+    display: none;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin: 10px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* عند تمرير المؤشر فوق البطاقة الإنجليزية */
+.container2:hover .card-eng-basem {
+    display: none;
+    /* إخفاء البطاقة الإنجليزية */
+}
+
+/* عند تمرير المؤشر فوق البطاقة الإنجليزية */
+.container2:hover .card-ar-basem {
+    display: block;
+    /* إظهار البطاقة العربية */
+}
+
+.card-ar-basem:hover {
+    display: block;
+    /* إظهار المحتوى العربي عند تمرير المؤشر */
+}
+
+
+.card-eng-basem img {
+    width: 100%;
+    /* لجعل الصورة تأخذ العرض الكامل للبطاقة */
+    height: auto;
+    /* للحفاظ على نسب الصورة */
+    border-radius: 30px;
+    transition: 0.5s;
+    border: 3px solid white;
+}
+
+.card-ar-basem img {
+    width: 100%;
+    /* لجعل الصورة تأخذ العرض الكامل للبطاقة */
+    height: auto;
+    /* للحفاظ على نسب الصورة */
+    border-radius: 30px;
+    transition: 0.5s;
+    border: 3px solid white;
+}
+
+.card-eng-.card-ar-basem {
+    display: none;
+    /* إخفاء المحتوى الإنجليزي عند تمرير المؤشر */
+}
+
+
+.card-eng-basem img:hover {
+
+    box-shadow: 0 0px 80px 0 rgb(255, 252, 252);
+}
+/*END-CARD-BASEM*/
+
+/*START-CARD-OMER*/
+.card-eng-omer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin: 10px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    padding: 5PX;
+}
+
+.card-ar-omer {
+    display: none;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin: 10px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* عند تمرير المؤشر فوق البطاقة الإنجليزية */
+.container2:hover .card-eng-omer {
+    display: none;
+    /* إخفاء البطاقة الإنجليزية */
+}
+
+/* عند تمرير المؤشر فوق البطاقة الإنجليزية */
+.container2:hover .card-ar-omer {
+    display: block;
+    /* إظهار البطاقة العربية */
+}
+
+.card-ar-omer:hover {
+    display: block;
+    /* إظهار المحتوى العربي عند تمرير المؤشر */
+}
+
+
+.card-eng-omer img {
+    width: 100%;
+    /* لجعل الصورة تأخذ العرض الكامل للبطاقة */
+    height: auto;
+    /* للحفاظ على نسب الصورة */
+    border-radius: 30px;
+    transition: 0.5s;
+    border: 3px solid white;
+}
+
+.card-ar-omer img {
+    width: 100%;
+    /* لجعل الصورة تأخذ العرض الكامل للبطاقة */
+    height: auto;
+    /* للحفاظ على نسب الصورة */
+    border-radius: 30px;
+    transition: 0.5s;
+    border: 3px solid white;
+}
+
+.card-eng-.card-ar-omer {
+    display: none;
+    /* إخفاء المحتوى الإنجليزي عند تمرير المؤشر */
+}
+
+
+.card-eng-omer img:hover {
+
+    box-shadow: 0 0px 80px 0 rgb(255, 252, 252);
+}
+/*END-CARD-OMER*/
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+
+.card:hover {
+    transform: rotateY(180deg);
+    
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.title {
+    position: absolute;
+    bottom: 50px;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+            rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+            bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.img1 {
+    position: absolute;
+    width: 90%;
+        /* لجعل الصورة تأخذ العرض الكامل للبطاقة */
+        height: auto;
+        /* للحفاظ على نسب الصورة */
+        border-radius: 30px;
+        transition: 0.5s;
+        border: 3px solid white;
+        align-items: center;
+        justify-content: center;
+        bottom: 190px;
+        left: -2px;
+}
